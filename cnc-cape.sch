@@ -10502,8 +10502,8 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <text x="-4.5056" y="-6.4106" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="KM-4.0">
-<pad name="P$1" x="-5.72" y="0" drill="0.9"/>
-<pad name="P$2" x="5.72" y="0" drill="0.9"/>
+<pad name="P$1" x="-5.72" y="0" drill="0.9" diameter="2.1844"/>
+<pad name="P$2" x="5.72" y="0" drill="0.9" diameter="2.1844"/>
 <wire x1="-7.5" y1="10.5" x2="7.5" y2="10.5" width="0.127" layer="21"/>
 <wire x1="7.5" y1="10.5" x2="7.5" y2="-10.5" width="0.127" layer="21"/>
 <wire x1="7.5" y1="-10.5" x2="-7.5" y2="-10.5" width="0.127" layer="21"/>
@@ -23770,6 +23770,8 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="power" width="0" drill="0">
+</class>
 </classes>
 <parts>
 <part name="C1" library="resistor" deviceset="CPOL-EU" device="E5-10.5" value="100uF">
@@ -24387,7 +24389,7 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <wire x1="43.18" y1="127" x2="58.42" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="58.42" y1="106.68" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
@@ -24581,7 +24583,7 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <wire x1="60.96" y1="-66.04" x2="60.96" y2="-71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VDD_5V" class="0">
+<net name="VDD_5V" class="1">
 <segment>
 <pinref part="C2" gate="G$1" pin="+"/>
 <wire x1="81.28" y1="114.3" x2="81.28" y2="116.84" width="0.1524" layer="91"/>
@@ -24806,7 +24808,7 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <label x="-7.62" y="-25.4" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="VCC" class="0">
+<net name="VCC" class="1">
 <segment>
 <pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="-2.54" y1="114.3" x2="-2.54" y2="127" width="0.1524" layer="91"/>
@@ -24819,7 +24821,7 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <wire x1="5.08" y1="124.46" x2="15.24" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VDD_3V3EXP" class="0">
+<net name="VDD_3V3EXP" class="1">
 <segment>
 <pinref part="U$1" gate="G$1" pin="VDD_3V3EXP@1"/>
 <wire x1="-132.08" y1="55.88" x2="-142.24" y2="55.88" width="0.1524" layer="91"/>
@@ -24874,9 +24876,9 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <label x="-142.24" y="7.62" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="-43.18" y1="40.64" x2="-45.72" y2="40.64" width="0.1524" layer="91"/>
-<label x="-45.72" y="40.64" size="0.8128" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC2" gate="A" pin="O"/>
+<wire x1="-43.18" y1="71.12" x2="-45.72" y2="71.12" width="0.1524" layer="91"/>
+<label x="-45.72" y="71.12" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC2" gate="C" pin="O"/>
 </segment>
 </net>
 <net name="EQEP0B" class="0">
@@ -24886,24 +24888,24 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <label x="-142.24" y="25.4" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="-43.18" y1="55.88" x2="-45.72" y2="55.88" width="0.1524" layer="91"/>
-<label x="-45.72" y="55.88" size="0.8128" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC2" gate="B" pin="O"/>
+<wire x1="-43.18" y1="40.64" x2="-45.72" y2="40.64" width="0.1524" layer="91"/>
+<label x="-45.72" y="40.64" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC2" gate="A" pin="O"/>
 </segment>
 </net>
 <net name="EQEP0A" class="0">
-<segment>
-<wire x1="-43.18" y1="71.12" x2="-45.72" y2="71.12" width="0.1524" layer="91"/>
-<label x="-45.72" y="71.12" size="0.8128" layer="95" rot="R180" xref="yes"/>
-<pinref part="IC2" gate="C" pin="O"/>
-</segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GPIO0_7"/>
 <wire x1="-76.2" y1="7.62" x2="-66.04" y2="7.62" width="0.1524" layer="91"/>
 <label x="-66.04" y="7.62" size="0.8128" layer="95" xref="yes"/>
 </segment>
+<segment>
+<wire x1="-43.18" y1="55.88" x2="-45.72" y2="55.88" width="0.1524" layer="91"/>
+<label x="-45.72" y="55.88" size="0.8128" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC2" gate="B" pin="O"/>
+</segment>
 </net>
-<net name="ENCODER0_A" class="0">
+<net name="ENCODER0_I" class="0">
 <segment>
 <pinref part="IC2" gate="C" pin="I"/>
 <wire x1="-22.86" y1="71.12" x2="-20.32" y2="71.12" width="0.1524" layer="91"/>
@@ -24918,7 +24920,7 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <pinref part="J6" gate="-2" pin="S"/>
 </segment>
 </net>
-<net name="ENCODER0_B" class="0">
+<net name="ENCODER0_A" class="0">
 <segment>
 <wire x1="-22.86" y1="55.88" x2="-20.32" y2="55.88" width="0.1524" layer="91"/>
 <label x="-7.62" y="55.88" size="0.8128" layer="95" xref="yes"/>
@@ -24948,7 +24950,7 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <pinref part="J9" gate="-2" pin="S"/>
 </segment>
 </net>
-<net name="ENCODER0_I" class="0">
+<net name="ENCODER0_B" class="0">
 <segment>
 <wire x1="-22.86" y1="40.64" x2="-20.32" y2="40.64" width="0.1524" layer="91"/>
 <label x="-7.62" y="40.64" size="0.8128" layer="95" xref="yes"/>
@@ -25155,13 +25157,6 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <label x="-66.04" y="104.14" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="X_STEP_3V" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="GPIO1_15"/>
-<wire x1="-132.08" y1="106.68" x2="-142.24" y2="106.68" width="0.1524" layer="91"/>
-<label x="-142.24" y="106.68" size="0.8128" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="Y_DIR_3V" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="UART4_RXD"/>
@@ -25190,48 +25185,6 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <label x="-142.24" y="30.48" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PWM1A_3V" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="EHRPWM1A"/>
-<wire x1="-76.2" y1="43.18" x2="-66.04" y2="43.18" width="0.1524" layer="91"/>
-<label x="-66.04" y="43.18" size="0.8128" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="PWM0_3V" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="I2C2_SDA"/>
-<wire x1="-76.2" y1="35.56" x2="-66.04" y2="35.56" width="0.1524" layer="91"/>
-<label x="-66.04" y="35.56" size="0.8128" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="A_STEP_3V" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="UART2_RXD"/>
-<wire x1="-76.2" y1="33.02" x2="-66.04" y2="33.02" width="0.1524" layer="91"/>
-<label x="-66.04" y="33.02" size="0.8128" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="B_DIR_3V" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="UART1_TXD"/>
-<wire x1="-76.2" y1="30.48" x2="-66.04" y2="30.48" width="0.1524" layer="91"/>
-<label x="-66.04" y="30.48" size="0.8128" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="B_STEP_3V" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="UART1_RXD"/>
-<wire x1="-76.2" y1="27.94" x2="-66.04" y2="27.94" width="0.1524" layer="91"/>
-<label x="-66.04" y="27.94" size="0.8128" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="PWM2A_3V" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="EHRPWM2A"/>
-<wire x1="-132.08" y1="101.6" x2="-142.24" y2="101.6" width="0.1524" layer="91"/>
-<label x="-142.24" y="101.6" size="0.8128" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="A_DIR_3V" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="GPIO1_16"/>
@@ -25258,13 +25211,6 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <pinref part="U$1" gate="G$1" pin="EHRPWM1B"/>
 <wire x1="-76.2" y1="40.64" x2="-66.04" y2="40.64" width="0.1524" layer="91"/>
 <label x="-66.04" y="40.64" size="0.8128" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="PWM2B_3V" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="EHRPWM2B"/>
-<wire x1="-132.08" y1="109.22" x2="-142.24" y2="109.22" width="0.1524" layer="91"/>
-<label x="-142.24" y="109.22" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MACHINE_PWR" class="0">
@@ -25549,6 +25495,62 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <wire x1="58.42" y1="50.8" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="P813" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="EHRPWM2B"/>
+<wire x1="-132.08" y1="109.22" x2="-142.24" y2="109.22" width="0.1524" layer="91"/>
+<label x="-142.24" y="109.22" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="P815" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GPIO1_15"/>
+<wire x1="-132.08" y1="106.68" x2="-142.24" y2="106.68" width="0.1524" layer="91"/>
+<label x="-142.24" y="106.68" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="P819" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="EHRPWM2A"/>
+<wire x1="-132.08" y1="101.6" x2="-142.24" y2="101.6" width="0.1524" layer="91"/>
+<label x="-142.24" y="101.6" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="P926" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="UART1_RXD"/>
+<wire x1="-76.2" y1="27.94" x2="-66.04" y2="27.94" width="0.1524" layer="91"/>
+<label x="-66.04" y="27.94" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="P924" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="UART1_TXD"/>
+<wire x1="-76.2" y1="30.48" x2="-66.04" y2="30.48" width="0.1524" layer="91"/>
+<label x="-66.04" y="30.48" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="P920" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="I2C2_SDA"/>
+<wire x1="-76.2" y1="35.56" x2="-66.04" y2="35.56" width="0.1524" layer="91"/>
+<label x="-66.04" y="35.56" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="P914" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="EHRPWM1A"/>
+<wire x1="-76.2" y1="43.18" x2="-66.04" y2="43.18" width="0.1524" layer="91"/>
+<label x="-66.04" y="43.18" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="P922" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="UART2_RXD"/>
+<wire x1="-76.2" y1="33.02" x2="-66.04" y2="33.02" width="0.1524" layer="91"/>
+<label x="-66.04" y="33.02" size="0.8128" layer="95" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -25623,12 +25625,12 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <instance part="R39" gate="G$1" x="-22.86" y="68.58" rot="R90"/>
 <instance part="R40" gate="G$1" x="-20.32" y="68.58" rot="R90"/>
 <instance part="R41" gate="G$1" x="-17.78" y="68.58" rot="R90"/>
-<instance part="R42" gate="G$1" x="-15.24" y="68.58" rot="R90"/>
+<instance part="R42" gate="G$1" x="-10.16" y="127" rot="R90"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="VDD_5V" class="0">
+<net name="VDD_5V" class="1">
 <segment>
 <pinref part="IC5" gate="P" pin="VCC"/>
 <wire x1="-66.04" y1="129.54" x2="-68.58" y2="129.54" width="0.1524" layer="91"/>
@@ -25650,7 +25652,7 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <label x="-127" y="78.74" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="IC5" gate="P" pin="GND"/>
 <wire x1="-50.8" y1="129.54" x2="-48.26" y2="129.54" width="0.1524" layer="91"/>
@@ -25659,6 +25661,10 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <junction x="-48.26" y="129.54"/>
 <pinref part="RN1" gate="G$1" pin="1"/>
 <wire x1="-48.26" y1="137.16" x2="-33.02" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="R42" gate="G$1" pin="2"/>
+<wire x1="-10.16" y1="132.08" x2="-10.16" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="137.16" x2="-33.02" y2="137.16" width="0.1524" layer="91"/>
+<junction x="-33.02" y="137.16"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="P" pin="GND"/>
@@ -25686,9 +25692,6 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <pinref part="R35" gate="G$1" pin="2"/>
 <wire x1="-30.48" y1="73.66" x2="-33.02" y2="73.66" width="0.1524" layer="91"/>
 <junction x="-33.02" y="73.66"/>
-<pinref part="R42" gate="G$1" pin="2"/>
-<wire x1="-15.24" y1="73.66" x2="-17.78" y2="73.66" width="0.1524" layer="91"/>
-<junction x="-17.78" y="73.66"/>
 </segment>
 <segment>
 <wire x1="35.56" y1="119.38" x2="30.48" y2="119.38" width="0.1524" layer="91"/>
@@ -25758,12 +25761,12 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <net name="ENABLE_5V" class="0">
 <segment>
 <pinref part="IC5" gate="A" pin="Y1"/>
-<wire x1="-45.72" y1="119.38" x2="-15.24" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="119.38" x2="-10.16" y2="119.38" width="0.1524" layer="91"/>
 <label x="-7.62" y="119.38" size="0.8128" layer="95" xref="yes"/>
-<wire x1="-15.24" y1="119.38" x2="-7.62" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="RN1" gate="G$1" pin="9"/>
-<wire x1="-15.24" y1="121.92" x2="-15.24" y2="119.38" width="0.1524" layer="91"/>
-<junction x="-15.24" y="119.38"/>
+<pinref part="R42" gate="G$1" pin="1"/>
+<wire x1="-10.16" y1="119.38" x2="-7.62" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="121.92" x2="-10.16" y2="119.38" width="0.1524" layer="91"/>
+<junction x="-10.16" y="119.38"/>
 </segment>
 <segment>
 <wire x1="35.56" y1="134.62" x2="30.48" y2="134.62" width="0.1524" layer="91"/>
@@ -25796,9 +25799,9 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <pinref part="IC4" gate="A" pin="Y1"/>
 <wire x1="-45.72" y1="58.42" x2="-15.24" y2="58.42" width="0.1524" layer="91"/>
 <label x="-10.16" y="58.42" size="0.8128" layer="95" xref="yes"/>
-<pinref part="R42" gate="G$1" pin="1"/>
+<pinref part="RN1" gate="G$1" pin="9"/>
 <wire x1="-15.24" y1="58.42" x2="-10.16" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="63.5" x2="-15.24" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="121.92" x2="-15.24" y2="58.42" width="0.1524" layer="91"/>
 <junction x="-15.24" y="58.42"/>
 </segment>
 <segment>
@@ -25920,56 +25923,56 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <label x="-116.84" y="60.96" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="PWM1A_3V" class="0">
+<net name="P819" class="0">
 <segment>
 <pinref part="IC5" gate="B" pin="A1"/>
 <wire x1="-71.12" y1="96.52" x2="-73.66" y2="96.52" width="0.1524" layer="91"/>
 <label x="-73.66" y="96.52" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PWM2B_3V" class="0">
+<net name="P815" class="0">
 <segment>
 <pinref part="IC5" gate="B" pin="A2"/>
 <wire x1="-71.12" y1="93.98" x2="-73.66" y2="93.98" width="0.1524" layer="91"/>
 <label x="-73.66" y="93.98" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PWM0_3V" class="0">
+<net name="P813" class="0">
 <segment>
 <pinref part="IC5" gate="A" pin="A4"/>
 <wire x1="-71.12" y1="111.76" x2="-73.66" y2="111.76" width="0.1524" layer="91"/>
 <label x="-73.66" y="111.76" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="A_STEP_3V" class="0">
+<net name="P920" class="0">
 <segment>
 <pinref part="IC5" gate="A" pin="A3"/>
 <wire x1="-71.12" y1="114.3" x2="-73.66" y2="114.3" width="0.1524" layer="91"/>
 <label x="-73.66" y="114.3" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="B_DIR_3V" class="0">
+<net name="P924" class="0">
 <segment>
 <pinref part="IC5" gate="A" pin="A2"/>
 <wire x1="-71.12" y1="116.84" x2="-73.66" y2="116.84" width="0.1524" layer="91"/>
 <label x="-73.66" y="116.84" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="B_STEP_3V" class="0">
+<net name="P926" class="0">
 <segment>
 <pinref part="IC5" gate="A" pin="A1"/>
 <wire x1="-71.12" y1="119.38" x2="-73.66" y2="119.38" width="0.1524" layer="91"/>
 <label x="-73.66" y="119.38" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="X_STEP_3V" class="0">
+<net name="P914" class="0">
 <segment>
 <pinref part="IC5" gate="B" pin="A3"/>
 <wire x1="-71.12" y1="91.44" x2="-73.66" y2="91.44" width="0.1524" layer="91"/>
 <label x="-73.66" y="91.44" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="PWM2A_3V" class="0">
+<net name="P922" class="0">
 <segment>
 <pinref part="IC5" gate="B" pin="A4"/>
 <wire x1="-71.12" y1="88.9" x2="-73.66" y2="88.9" width="0.1524" layer="91"/>
@@ -26245,7 +26248,7 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <junction x="-330.2" y="271.78"/>
 </segment>
 </net>
-<net name="VDD_5V" class="0">
+<net name="VDD_5V" class="1">
 <segment>
 <pinref part="D2" gate="1" pin="C"/>
 <wire x1="-330.2" y1="284.48" x2="-330.2" y2="281.94" width="0.1524" layer="91"/>
@@ -26277,7 +26280,7 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <junction x="-330.2" y="215.9"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="T1" gate="G$1" pin="E"/>
 <pinref part="GND6" gate="1" pin="GND"/>
@@ -26529,14 +26532,14 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <busses>
 </busses>
 <nets>
-<net name="VDD_5V" class="0">
+<net name="VDD_5V" class="1">
 <segment>
 <pinref part="DC1" gate="G$1" pin="+VIN"/>
 <wire x1="-12.7" y1="88.9" x2="-22.86" y2="88.9" width="0.1524" layer="91"/>
 <label x="-22.86" y="88.9" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="DC1" gate="G$1" pin="-VIN"/>
 <wire x1="-12.7" y1="83.82" x2="-15.24" y2="83.82" width="0.1524" layer="91"/>
