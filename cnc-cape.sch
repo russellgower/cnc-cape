@@ -22829,6 +22829,49 @@ Grid 5.00 mm&lt;p&gt;
 <text x="5.4578" y="0.635" size="1.27" layer="51" ratio="10">5</text>
 <text x="10.4108" y="0.635" size="1.27" layer="51" ratio="10">6</text>
 </package>
+<package name="W237-4">
+<description>&lt;b&gt;WAGO SCREW CLAMP&lt;/b&gt;</description>
+<wire x1="-8.491" y1="-2.286" x2="-6.484" y2="-0.279" width="0.254" layer="51"/>
+<wire x1="-3.512" y1="-2.261" x2="-1.531" y2="-0.254" width="0.254" layer="51"/>
+<wire x1="1.517" y1="-2.286" x2="3.524" y2="-0.279" width="0.254" layer="51"/>
+<wire x1="6.495" y1="-2.261" x2="8.477" y2="-0.254" width="0.254" layer="51"/>
+<wire x1="-9.989" y1="-5.461" x2="10.001" y2="-5.461" width="0.1524" layer="21"/>
+<wire x1="10.001" y1="3.734" x2="10.001" y2="3.531" width="0.1524" layer="21"/>
+<wire x1="10.001" y1="3.734" x2="-9.989" y2="3.734" width="0.1524" layer="21"/>
+<wire x1="-9.989" y1="-5.461" x2="-9.989" y2="-3.073" width="0.1524" layer="21"/>
+<wire x1="-9.989" y1="-3.073" x2="-8.389" y2="-3.073" width="0.1524" layer="21"/>
+<wire x1="-8.389" y1="-3.073" x2="-6.611" y2="-3.073" width="0.1524" layer="51"/>
+<wire x1="-6.611" y1="-3.073" x2="-3.385" y2="-3.073" width="0.1524" layer="21"/>
+<wire x1="-1.607" y1="-3.073" x2="1.619" y2="-3.073" width="0.1524" layer="21"/>
+<wire x1="3.397" y1="-3.073" x2="6.622" y2="-3.073" width="0.1524" layer="21"/>
+<wire x1="8.4" y1="-3.073" x2="10.001" y2="-3.073" width="0.1524" layer="21"/>
+<wire x1="-9.989" y1="-3.073" x2="-9.989" y2="3.531" width="0.1524" layer="21"/>
+<wire x1="10.001" y1="-3.073" x2="10.001" y2="-5.461" width="0.1524" layer="21"/>
+<wire x1="-9.989" y1="3.531" x2="10.001" y2="3.531" width="0.1524" layer="21"/>
+<wire x1="-9.989" y1="3.531" x2="-9.989" y2="3.734" width="0.1524" layer="21"/>
+<wire x1="10.001" y1="3.531" x2="10.001" y2="-3.073" width="0.1524" layer="21"/>
+<wire x1="-3.385" y1="-3.073" x2="-1.607" y2="-3.073" width="0.1524" layer="51"/>
+<wire x1="1.619" y1="-3.073" x2="3.397" y2="-3.073" width="0.1524" layer="51"/>
+<wire x1="6.622" y1="-3.073" x2="8.4" y2="-3.073" width="0.1524" layer="51"/>
+<circle x="-7.5" y="-1.27" radius="1.4986" width="0.1524" layer="51"/>
+<circle x="-7.5" y="2.2098" radius="0.508" width="0.1524" layer="21"/>
+<circle x="-2.4962" y="-1.27" radius="1.4986" width="0.1524" layer="51"/>
+<circle x="-2.4962" y="2.2098" radius="0.508" width="0.1524" layer="21"/>
+<circle x="2.5076" y="-1.27" radius="1.4986" width="0.1524" layer="51"/>
+<circle x="2.5076" y="2.2098" radius="0.508" width="0.1524" layer="21"/>
+<circle x="7.5114" y="-1.27" radius="1.4986" width="0.1524" layer="51"/>
+<circle x="7.5114" y="2.2098" radius="0.508" width="0.1524" layer="21"/>
+<pad name="1" x="-7.5" y="-1.27" drill="1.1938" shape="long" rot="R90"/>
+<pad name="2" x="-2.5" y="-1.27" drill="1.1938" shape="long" rot="R90"/>
+<pad name="3" x="2.5" y="-1.27" drill="1.1938" shape="long" rot="R90"/>
+<pad name="4" x="7.5" y="-1.27" drill="1.1938" shape="long" rot="R90"/>
+<text x="-7.6524" y="-5.0292" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-8.7446" y="-7.4422" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-9.532" y="0.635" size="1.27" layer="51" ratio="10">1</text>
+<text x="-4.579" y="0.635" size="1.27" layer="51" ratio="10">2</text>
+<text x="0.4756" y="0.635" size="1.27" layer="51" ratio="10">3</text>
+<text x="5.4286" y="0.635" size="1.27" layer="51" ratio="10">4</text>
+</package>
 <package name="W237-102">
 <description>&lt;b&gt;WAGO SCREW CLAMP&lt;/b&gt;</description>
 <wire x1="-3.491" y1="-2.286" x2="-1.484" y2="-0.279" width="0.254" layer="51"/>
@@ -22892,6 +22935,33 @@ Grid 5.00 mm&lt;p&gt;
 <connect gate="-4" pin="KL" pad="4"/>
 <connect gate="-5" pin="KL" pad="5"/>
 <connect gate="-6" pin="KL" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="W237-4" prefix="X" uservalue="yes">
+<description>&lt;b&gt;WAGO SCREW CLAMP&lt;/b&gt;</description>
+<gates>
+<gate name="-1" symbol="KL" x="0" y="10.16" addlevel="always"/>
+<gate name="-2" symbol="KL" x="0" y="5.08" addlevel="always"/>
+<gate name="-3" symbol="KL" x="0" y="0" addlevel="always"/>
+<gate name="-4" symbol="KL+V" x="0" y="-5.08" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="W237-4">
+<connects>
+<connect gate="-1" pin="KL" pad="1"/>
+<connect gate="-2" pin="KL" pad="2"/>
+<connect gate="-3" pin="KL" pad="3"/>
+<connect gate="-4" pin="KL" pad="4"/>
 </connects>
 <technologies>
 <technology name="">
@@ -24017,8 +24087,10 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <part name="C4" library="rcl" deviceset="C-EU" device="050-024X044" value="100nF"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="X4" library="con-wago-500" deviceset="W237-102" device=""/>
-<part name="X5" library="con-wago-500" deviceset="W237-102" device="" value="Power In"/>
+<part name="X4" library="con-wago-500" deviceset="W237-4" device=""/>
+<part name="X5" library="con-wago-500" deviceset="W237-102" device="" value="Power In">
+<attribute name="FARNELL" value="3089034"/>
+</part>
 <part name="LED18" library="led" deviceset="LED" device="3MM">
 <attribute name="FARNELL" value="1581133"/>
 </part>
@@ -24087,6 +24159,8 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <part name="R40" library="rcl" deviceset="R-EU_" device="0204/5" value="4k7"/>
 <part name="R41" library="rcl" deviceset="R-EU_" device="0204/5" value="4k7"/>
 <part name="R42" library="rcl" deviceset="R-EU_" device="0204/5" value="4k7"/>
+<part name="OK2" library="optocoupler" deviceset="LTV816" device=""/>
+<part name="R43" library="rcl" deviceset="R-EU_" device="0204/5" value="1k"/>
 </parts>
 <sheets>
 <sheet>
@@ -24310,7 +24384,9 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <instance part="J22" gate="-3" x="147.32" y="-38.1"/>
 <instance part="GND2" gate="1" x="-93.98" y="-68.58"/>
 <instance part="GND3" gate="1" x="60.96" y="-73.66"/>
-<instance part="X5" gate="-1" x="-15.24" y="127"/>
+<instance part="X5" gate="-1" x="-15.24" y="127">
+<attribute name="FARNELL" x="-15.24" y="127" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="X5" gate="-2" x="-15.24" y="101.6"/>
 <instance part="LED18" gate="G$1" x="88.9" y="106.68">
 <attribute name="FARNELL" x="88.9" y="106.68" size="0.8128" layer="96" display="off"/>
@@ -25863,12 +25939,15 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <pinref part="R38" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="RELAY5_5V" class="0">
+<net name="INHIBIT" class="0">
 <segment>
 <pinref part="IC4" gate="B" pin="Y4"/>
 <wire x1="-45.72" y1="27.94" x2="-33.02" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="63.5" x2="-33.02" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="R35" gate="G$1" pin="1"/>
+<wire x1="-33.02" y1="27.94" x2="-10.16" y2="27.94" width="0.1524" layer="91"/>
+<junction x="-33.02" y="27.94"/>
+<label x="-10.16" y="27.94" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="Z_STEP_5V" class="0">
@@ -26527,6 +26606,10 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <instance part="C4" gate="G$1" x="93.98" y="63.5"/>
 <instance part="X4" gate="-1" x="104.14" y="68.58" rot="R180"/>
 <instance part="X4" gate="-2" x="104.14" y="38.1" rot="R180"/>
+<instance part="X4" gate="-3" x="104.14" y="25.4" rot="R180"/>
+<instance part="X4" gate="-4" x="104.14" y="30.48" rot="R180"/>
+<instance part="OK2" gate="G$1" x="-2.54" y="27.94"/>
+<instance part="R43" gate="G$1" x="-22.86" y="25.4"/>
 </instances>
 <busses>
 </busses>
@@ -26541,6 +26624,10 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <wire x1="-12.7" y1="63.5" x2="-17.78" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="63.5" x2="-17.78" y2="88.9" width="0.1524" layer="91"/>
 <junction x="-17.78" y="88.9"/>
+<pinref part="OK2" gate="G$1" pin="A"/>
+<wire x1="-12.7" y1="30.48" x2="-17.78" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="30.48" x2="-17.78" y2="63.5" width="0.1524" layer="91"/>
+<junction x="-17.78" y="63.5"/>
 </segment>
 </net>
 <net name="GND" class="1">
@@ -26703,6 +26790,34 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <pinref part="R23" gate="G$1" pin="2"/>
 <pinref part="OK1" gate="G$1" pin="C"/>
 <wire x1="-17.78" y1="58.42" x2="-12.7" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$52" class="0">
+<segment>
+<pinref part="R43" gate="G$1" pin="2"/>
+<pinref part="OK2" gate="G$1" pin="C"/>
+<wire x1="-17.78" y1="25.4" x2="-12.7" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="INHIBIT" class="0">
+<segment>
+<pinref part="R43" gate="G$1" pin="1"/>
+<wire x1="-27.94" y1="25.4" x2="-30.48" y2="25.4" width="0.1524" layer="91"/>
+<label x="-30.48" y="25.4" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$46" class="0">
+<segment>
+<pinref part="OK2" gate="G$1" pin="COL"/>
+<pinref part="X4" gate="-4" pin="KL"/>
+<wire x1="5.08" y1="30.48" x2="99.06" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$51" class="0">
+<segment>
+<pinref part="OK2" gate="G$1" pin="EMIT"/>
+<pinref part="X4" gate="-3" pin="KL"/>
+<wire x1="5.08" y1="25.4" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
