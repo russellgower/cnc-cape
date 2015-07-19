@@ -25160,7 +25160,7 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <pinref part="J17" gate="-2" pin="S"/>
 </segment>
 </net>
-<net name="IN_X_MIN" class="0">
+<net name="P810" class="0">
 <segment>
 <wire x1="-43.18" y1="-20.32" x2="-45.72" y2="-20.32" width="0.1524" layer="91"/>
 <label x="-45.72" y="-20.32" size="0.8128" layer="95" rot="R180" xref="yes"/>
@@ -25172,7 +25172,7 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <label x="-66.04" y="114.3" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="IN_X_MAX" class="0">
+<net name="P809" class="0">
 <segment>
 <wire x1="-43.18" y1="-35.56" x2="-45.72" y2="-35.56" width="0.1524" layer="91"/>
 <label x="-45.72" y="-35.56" size="0.8128" layer="95" rot="R180" xref="yes"/>
@@ -25184,7 +25184,7 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <label x="-142.24" y="114.3" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="IN_Y_MIN" class="0">
+<net name="P808" class="0">
 <segment>
 <wire x1="35.56" y1="71.12" x2="33.02" y2="71.12" width="0.1524" layer="91"/>
 <label x="33.02" y="71.12" size="0.8128" layer="95" rot="R180" xref="yes"/>
@@ -25196,7 +25196,7 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <label x="-66.04" y="116.84" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="IN_Y_MAX" class="0">
+<net name="P814" class="0">
 <segment>
 <wire x1="35.56" y1="55.88" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
 <label x="33.02" y="55.88" size="0.8128" layer="95" rot="R180" xref="yes"/>
@@ -25208,7 +25208,7 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <label x="-66.04" y="109.22" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="IN_Z_MIN" class="0">
+<net name="P817" class="0">
 <segment>
 <wire x1="35.56" y1="40.64" x2="33.02" y2="40.64" width="0.1524" layer="91"/>
 <label x="33.02" y="40.64" size="0.8128" layer="95" rot="R180" xref="yes"/>
@@ -25220,7 +25220,7 @@ Source: http://www.national.com/ds/LM/LM2596.pdf</description>
 <label x="-142.24" y="104.14" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="IN_Z_MAX" class="0">
+<net name="P818" class="0">
 <segment>
 <wire x1="35.56" y1="25.4" x2="33.02" y2="25.4" width="0.1524" layer="91"/>
 <label x="33.02" y="25.4" size="0.8128" layer="95" rot="R180" xref="yes"/>
